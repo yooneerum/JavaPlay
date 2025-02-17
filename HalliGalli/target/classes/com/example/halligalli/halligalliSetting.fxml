@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.halligalli.HalliGalliSettingController">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../fruitsBackgroundMenu.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#eee7d7" height="543.0" layoutX="281.0" layoutY="138.0" stroke="#685d4e" strokeType="INSIDE" strokeWidth="3.0" width="629.0" />
+      <Slider blockIncrement="1.0" layoutX="535.0" layoutY="338.0" majorTickUnit="5.0" max="10.0" minorTickCount="4" onMouseDragged="#setMusic" onMouseReleased="#setMusic" prefHeight="55.0" prefWidth="320.0" showTickMarks="true" value="10.0" />
+      <Slider blockIncrement="1.0" layoutX="535.0" layoutY="398.0" majorTickUnit="5.0" max="10.0" minorTickCount="4" onMouseDragged="#setEffect" onMouseReleased="#setEffect" prefHeight="55.0" prefWidth="320.0" showTickMarks="true" value="10.0" />
+      <Text fill="#393028" layoutX="345.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Music sound" wrappingWidth="140.87998962402344">
+         <font>
+            <Font name="Avenir Heavy" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#393028" layoutX="345.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effect sound" wrappingWidth="148.03195927473598">
+         <font>
+            <Font name="Avenir Heavy" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#393028" layoutX="337.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER" wrappingWidth="148.03195927473598">
+         <font>
+            <Font name="Avenir Black" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="backToMenuText" fill="#2f221a" layoutX="22.0" layoutY="82.0" onMouseClicked="#backToMenuText" strokeType="OUTSIDE" strokeWidth="0.0" text="↩️" wrappingWidth="33.2454833984375">
+         <font>
+            <Font name="Avenir Roman" size="64.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

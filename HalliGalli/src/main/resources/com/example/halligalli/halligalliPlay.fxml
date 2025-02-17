@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.halligalli.HalliGalliPlayController">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../fruitsBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p1deckImg" fitHeight="290.0" fitWidth="170.0" layoutX="98.0" layoutY="520.0" rotate="35.0">
+         <image>
+            <Image url="@../../../cardBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p2deckImg" fitHeight="290.0" fitWidth="170.0" layoutX="917.0" layoutY="520.0" rotate="325.0">
+         <image>
+            <Image url="@../../../cardBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hitImg" fitHeight="200.0" fitWidth="200.0" layoutX="487.0" layoutY="464.0" visible="false">
+         <image>
+            <Image url="@../../../hittingImage.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="257.0" layoutY="685.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#eee7d7" height="64.0" stroke="#685d4e" strokeType="INSIDE" strokeWidth="3.0" width="175.0" />
+            <Text fx:id="p1deckNumText" fill="#61584f" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+               <font>
+                  <Font name="Avenir Next Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane layoutX="720.0" layoutY="687.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#eee7d7" height="64.0" stroke="#685d4e" strokeType="INSIDE" strokeWidth="3.0" width="175.0" />
+            <Text fx:id="p2deckNumText" fill="#61584f" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+               <font>
+                  <Font name="Avenir Next Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <Rectangle fx:id="p1frontWhite" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="290.0" layoutX="385.0" layoutY="250.0" stroke="#39332e" strokeType="INSIDE" strokeWidth="3.0" visible="false" width="170.0" />
+      <Rectangle fx:id="p2frontWhite" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="290.0" layoutX="628.0" layoutY="250.0" stroke="#39332e" strokeType="INSIDE" strokeWidth="3.0" visible="false" width="170.0" />
+      <ImageView fx:id="p1frontBack" fitHeight="290.0" fitWidth="170.0" layoutX="385.0" layoutY="250.0" visible="false">
+         <image>
+            <Image url="@../../../cardBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p2frontBack" fitHeight="290.0" fitWidth="170.0" layoutX="628.0" layoutY="250.0" visible="false">
+         <image>
+            <Image url="@../../../cardBack.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="p1bananaPane" layoutX="385.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p1banana1" fitHeight="94.0" fitWidth="85.0" layoutX="5.0" layoutY="10.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1banana2" fitHeight="94.0" fitWidth="85.0" layoutX="80.0" layoutY="10.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1banana3" fitHeight="94.0" fitWidth="85.0" layoutX="40.0" layoutY="100.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1banana4" fitHeight="94.0" fitWidth="85.0" layoutX="5.0" layoutY="185.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1banana5" fitHeight="94.0" fitWidth="85.0" layoutX="80.0" layoutY="185.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p2bananaPane" layoutX="628.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p2banana1" fitHeight="94.0" fitWidth="85.0" layoutX="5.0" layoutY="10.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2banana2" fitHeight="94.0" fitWidth="85.0" layoutX="80.0" layoutY="10.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2banana3" fitHeight="94.0" fitWidth="85.0" layoutX="40.0" layoutY="100.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2banana4" fitHeight="94.0" fitWidth="85.0" layoutX="5.0" layoutY="185.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2banana5" fitHeight="94.0" fitWidth="85.0" layoutX="80.0" layoutY="185.0" rotate="345.0" visible="false">
+               <image>
+                  <Image url="@../../../banana.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p1limePane" layoutX="385.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p1lime1" fitHeight="60.0" fitWidth="55.0" layoutX="20.0" layoutY="25.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1lime2" fitHeight="60.0" fitWidth="55.0" layoutX="95.0" layoutY="25.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1lime3" fitHeight="60.0" fitWidth="55.0" layoutX="55.0" layoutY="115.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1lime4" fitHeight="60.0" fitWidth="55.0" layoutX="20.0" layoutY="200.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1lime5" fitHeight="60.0" fitWidth="55.0" layoutX="95.0" layoutY="200.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p2limePane" layoutX="628.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p2lime1" fitHeight="60.0" fitWidth="55.0" layoutX="20.0" layoutY="25.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2lime2" fitHeight="60.0" fitWidth="55.0" layoutX="95.0" layoutY="25.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2lime3" fitHeight="60.0" fitWidth="55.0" layoutX="55.0" layoutY="115.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2lime4" fitHeight="60.0" fitWidth="55.0" layoutX="20.0" layoutY="200.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2lime5" fitHeight="60.0" fitWidth="55.0" layoutX="95.0" layoutY="200.0" visible="false">
+               <image>
+                  <Image url="@../../../lime.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p1strawPane" layoutX="385.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p1straw1" fitHeight="65.0" fitWidth="60.0" layoutX="20.0" layoutY="20.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1straw2" fitHeight="65.0" fitWidth="60.0" layoutX="95.0" layoutY="20.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1straw3" fitHeight="65.0" fitWidth="60.0" layoutX="55.0" layoutY="110.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1straw4" fitHeight="65.0" fitWidth="60.0" layoutX="20.0" layoutY="195.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1straw5" fitHeight="65.0" fitWidth="60.0" layoutX="95.0" layoutY="195.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p2strawPane" layoutX="628.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p2straw1" fitHeight="65.0" fitWidth="60.0" layoutX="20.0" layoutY="20.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2straw2" fitHeight="65.0" fitWidth="60.0" layoutX="95.0" layoutY="20.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2straw3" fitHeight="65.0" fitWidth="60.0" layoutX="55.0" layoutY="110.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2straw4" fitHeight="65.0" fitWidth="60.0" layoutX="20.0" layoutY="195.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2straw5" fitHeight="65.0" fitWidth="60.0" layoutX="95.0" layoutY="195.0" visible="false">
+               <image>
+                  <Image url="@../../../strawberry.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p1plumPane" layoutX="385.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p1plum1" fitHeight="68.0" fitWidth="57.0" layoutX="20.0" layoutY="20.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1plum2" fitHeight="68.0" fitWidth="57.0" layoutX="95.0" layoutY="20.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1plum3" fitHeight="68.0" fitWidth="57.0" layoutX="55.0" layoutY="110.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1plum4" fitHeight="68.0" fitWidth="57.0" layoutX="20.0" layoutY="195.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p1plum5" fitHeight="68.0" fitWidth="57.0" layoutX="95.0" layoutY="195.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p2plumPane" layoutX="628.0" layoutY="250.0" prefHeight="290.0" prefWidth="170.0">
+         <children>
+            <ImageView fx:id="p2plum1" fitHeight="68.0" fitWidth="57.0" layoutX="20.0" layoutY="20.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2plum2" fitHeight="68.0" fitWidth="57.0" layoutX="95.0" layoutY="20.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2plum3" fitHeight="68.0" fitWidth="57.0" layoutX="55.0" layoutY="110.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2plum4" fitHeight="68.0" fitWidth="57.0" layoutX="20.0" layoutY="195.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="p2plum5" fitHeight="68.0" fitWidth="57.0" layoutX="95.0" layoutY="195.0" rotate="10.0" visible="false">
+               <image>
+                  <Image url="@../../../plum.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <StackPane layoutX="450.0" layoutY="-49.0">
+         <children>
+            <Ellipse fill="WHITE" radiusX="149.0" radiusY="80.0" stroke="#3c352d" strokeType="INSIDE" strokeWidth="5.0" />
+            <Text fx:id="scoreText" fill="#61584f" strokeType="OUTSIDE" strokeWidth="0.0" text="0 : 0">
+               <font>
+                  <Font name="Avenir Next Bold" size="64.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="30.0" />
+               </StackPane.margin>
+            </Text>
+         </children>
+      </StackPane>
+      <Text fill="#3c3229" layoutX="40.0" layoutY="91.0" onMouseClicked="#backToMenuText" strokeType="OUTSIDE" strokeWidth="0.0" text="⍇">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="winnerText" fill="#403227" layoutX="327.0" layoutY="387.0" stroke="#ede8e1" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="10.0" text="Player 1 wins!" textAlignment="CENTER" visible="false" wrappingWidth="530.6033935546875">
+         <font>
+            <Font name="Avenir Black" size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="restartText" fill="#403227" layoutX="504.0" layoutY="493.0" onMouseClicked="#restartClicked" stroke="#ede8e1" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" text="Restart" visible="false">
+         <font>
+            <Font name="Avenir Black" size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
